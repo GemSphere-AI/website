@@ -995,16 +995,10 @@
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
-<script>
-    function closeWelcomeBubble() {
-        document.getElementById('welcome-bubble').classList.add('d-none');
-    }
-
-    function openChatbot() {
-        // Close the bubble first to reveal the chatbot icon and ensure we don't click the bubble itself
-        closeWelcomeBubble();
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js" id="chatbot" environmentId="d0804337-75d7-e516-874e-c28f97bb5ed0" crossorigin="anonymous"></script>
+</body>
 
         // Wait a brief moment for the bubble to disappear
         setTimeout(function () {
@@ -1070,3 +1064,4 @@
 </body>
 
 </html>
+
