@@ -32,9 +32,9 @@ fs.readdir(srcDir, (err, files) => {
                 // SEO Data
                 const pageMeta = {
                     'index.html': {
-                        title: 'GemSphere AI - Innovative IT & AI Solutions',
-                        keywords: 'GemSphere AI, IT Solutions, Artificial Intelligence, Software Development, Bengaluru, Automation',
-                        description: 'GemSphere AI delivers premium IT and AI solutions, specializing in custom software, ecommerce platforms, and business automation to help you grow.'
+                        title: 'GemSphere AI - Innovative IT, E-commerce & Supply Chain Solutions',
+                        keywords: 'GemSphere AI, IT Solutions, Artificial Intelligence, E-commerce Development, Supply Chain Optimization, Software Development, Bengaluru, Automation',
+                        description: 'GemSphere AI delivers premium IT and AI solutions, specializing in custom software, advanced e-commerce platforms, and supply chain automation to help you grow.'
                     },
                     'about.html': {
                         title: 'About Us - GemSphere AI',
@@ -43,18 +43,18 @@ fs.readdir(srcDir, (err, files) => {
                     },
                     'service.html': {
                         title: 'Our Services - GemSphere AI',
-                        keywords: 'Web Development, AI Solutions, UI/UX Design, Digital Marketing, App Development, Cyber Security',
-                        description: 'Explore our comprehensive IT services including Web Development, AI Integration, UI/UX Design, and Digital Marketing tailored for your business.'
+                        keywords: 'Web Development, AI Solutions, E-commerce, Supply Chain Management, UI/UX Design, Digital Marketing, App Development, Cyber Security',
+                        description: 'Explore our comprehensive IT services including Web Development, AI Integration, E-commerce Solutions, Supply Chain Optimization, and Digital Marketing.'
                     },
                     'project.html': {
                         title: 'Our Projects - GemSphere AI Portfolio',
-                        keywords: 'Software Projects, Case Studies, IT Portfolio, App Success Stories, Web Development Examples',
-                        description: 'View our portfolio of successful projects. See how GemSphere AI has helped businesses achieve their goals through innovative technology.'
+                        keywords: 'Software Projects, E-commerce Case Studies, Supply Chain Projects, IT Portfolio, App Success Stories, Web Development Examples',
+                        description: 'View our portfolio of successful projects, including e-commerce platforms and logistics solutions. See how GemSphere AI has helped businesses achieve their goals.'
                     },
                     'product.html': {
                         title: 'Our Products - GemSphere AI Solutions',
-                        keywords: 'AI Products, Business Automation, Data Analytics, Cybersecurity Tools, Cloud Platforms',
-                        description: 'Explore GemSphere AI\'s innovative product suite including GemAI Core, SecureSphere, and detailed business intelligence tools.'
+                        keywords: 'AI Products, Business Automation, E-commerce Tools, Supply Chain Analytics, Data Analytics, Cybersecurity Tools, Cloud Platforms',
+                        description: 'Explore GemSphere AI\'s innovative product suite including GemAI Core, SecureSphere, and detailed tools for e-commerce and supply chain management.'
                     },
                     'blog.html': {
                         title: 'Latest Insights - GemSphere AI Blog',
