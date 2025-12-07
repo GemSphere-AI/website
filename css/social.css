@@ -1,0 +1,76 @@
+/* Social Media Brand Colors */
+
+/* Common Transition */
+.social-share a,
+.top-link a,
+.hightech-link a,
+.team-icon a,
+.blog-icon-2 a {
+    transition: all 0.3s ease;
+}
+
+/* Facebook */
+.social-fb {
+    background-color: #3b5998 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.social-fb i {
+    color: white !important;
+}
+
+/* Twitter / X */
+.social-tw {
+    background-color: #1DA1F2 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.social-tw i {
+    color: white !important;
+}
+
+/* Instagram */
+.social-ins {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.social-ins i {
+    color: white !important;
+}
+
+/* LinkedIn */
+.social-in {
+    background-color: #0077b5 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.social-in i {
+    color: white !important;
+}
+
+/* Blogspot */
+.social-bl {
+    background-color: #FF5722 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.social-bl i {
+    color: white !important;
+}
+
+
+/* Hover Animation - Pulse */
+.social-fb:hover,
+.social-tw:hover,
+.social-ins:hover,
+.social-in:hover,
+.social-bl:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
