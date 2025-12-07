@@ -374,90 +374,113 @@
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <span class="text-light">Designed By <a href="https://htmlcodex.com" class="text-secondary">GemSphere
+                        AI</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Welcome Chat Bubble -->
+<div id="welcome-bubble" class="welcome-bubble d-none">
+    <div class="card border-0 shadow-lg">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-2">
+            <h6 class="mb-0 text-white" style="font-size: 14px;">GemSphere AI Support</h6>
+            <button type="button" class="btn-close btn-close-white shadow-none" style="font-size: 10px;"
+                onclick="closeWelcomeBubble()"></button>
+        </div>
+        <div class="card-body py-3">
+            <p class="mb-2" style="font-size: 14px;">Welcome to GemSphere.ai! How can we support your digital
+                transformation today?</p>
+            <a href="#" onclick="openChatbot(); return false;" class="btn btn-sm btn-primary w-100 rounded-pill"><i
+                    class="fas fa-hand-point-right me-2"></i>Chat with Us</a>
+        </div>
+    </div>
+</div>
 
 
 
-                <!-- JavaScript Libraries -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-                <script src="lib/wow/wow.min.js"></script>
-                <script src="lib/easing/easing.min.js"></script>
-                <script src="lib/waypoints/waypoints.min.js"></script>
-                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-                <!-- Template Javascript -->
-                <script src="js/main.js"></script>
-                <script>
-                    function closeWelcomeBubble() {
-                        document.getElementById('welcome-bubble').classList.add('d-none');
-                    }
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-                    function openChatbot() {
-                        // Close the bubble first to reveal the chatbot icon and ensure we don't click the bubble itself
-                        closeWelcomeBubble();
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    function closeWelcomeBubble() {
+        document.getElementById('welcome-bubble').classList.add('d-none');
+    }
 
-                        // Wait a brief moment for the bubble to disappear
-                        setTimeout(function () {
-                            // Strategy 1: Selectors
-                            const selectors = [
-                                '#oc-lc-launcher',
-                                '#lc_launcher',
-                                '.cc-lc-launcher',
-                                '[data-id="chat-widget-launcher"]',
-                                'button[aria-label="Chat"]',
-                                'button[aria-label="Open Chat"]',
-                                'iframe[title*="chat"]', // Sometimes clicking the iframe container works
-                                'div[role="button"][aria-label*="chat"]'
-                            ];
+    function openChatbot() {
+        // Close the bubble first to reveal the chatbot icon and ensure we don't click the bubble itself
+        closeWelcomeBubble();
 
-                            let found = false;
-                            for (let selector of selectors) {
-                                let el = document.querySelector(selector);
-                                if (el) {
-                                    console.log("Found chat launcher by selector:", selector);
-                                    el.click();
-                                    found = true;
-                                    return; // Success
-                                }
-                            }
+        // Wait a brief moment for the bubble to disappear
+        setTimeout(function () {
+            // Strategy 1: Selectors
+            const selectors = [
+                '#oc-lc-launcher',
+                '#lc_launcher',
+                '.cc-lc-launcher',
+                '[data-id="chat-widget-launcher"]',
+                'button[aria-label="Chat"]',
+                'button[aria-label="Open Chat"]',
+                'iframe[title*="chat"]', // Sometimes clicking the iframe container works
+                'div[role="button"][aria-label*="chat"]'
+            ];
 
-                            // Strategy 2: Coordinate Click (Fallback)
-                            // Most chat widgets are at the bottom-right corner.
-                            // We target a point 50px from right and bottom.
-                            if (!found) {
-                                console.log("Selector failed. Attempting coordinate click at bottom-right.");
-                                const x = window.innerWidth - 50;
-                                const y = window.innerHeight - 50;
-                                const elementAtPoint = document.elementFromPoint(x, y);
+            let found = false;
+            for (let selector of selectors) {
+                let el = document.querySelector(selector);
+                if (el) {
+                    console.log("Found chat launcher by selector:", selector);
+                    el.click();
+                    found = true;
+                    return; // Success
+                }
+            }
 
-                                if (elementAtPoint) {
-                                    console.log("Clicking element at (" + x + "," + y + "):", elementAtPoint);
-                                    elementAtPoint.click();
+            // Strategy 2: Coordinate Click (Fallback)
+            // Most chat widgets are at the bottom-right corner.
+            // We target a point 50px from right and bottom.
+            if (!found) {
+                console.log("Selector failed. Attempting coordinate click at bottom-right.");
+                const x = window.innerWidth - 50;
+                const y = window.innerHeight - 50;
+                const elementAtPoint = document.elementFromPoint(x, y);
 
-                                    // Some widgets need mouse events
-                                    const eventOptions = { bubbles: true, cancelable: true, view: window };
-                                    elementAtPoint.dispatchEvent(new MouseEvent('mousedown', eventOptions));
-                                    elementAtPoint.dispatchEvent(new MouseEvent('mouseup', eventOptions));
-                                } else {
-                                    console.log("No element found at coordinate.");
-                                }
-                            }
-                        }, 300);
-                    }
+                if (elementAtPoint) {
+                    console.log("Clicking element at (" + x + "," + y + "):", elementAtPoint);
+                    elementAtPoint.click();
 
-                    window.addEventListener('load', function () {
-                        setTimeout(function () {
-                            var bubble = document.getElementById('welcome-bubble');
-                            if (bubble) {
-                                bubble.classList.remove('d-none');
-                                bubble.classList.add('show-bubble');
-                            }
-                        }, 2000);
-                    });
-                </script>
-                <script type="text/javascript"
-                    src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js" id="chatbot"
-                    environmentId="d0804337-75d7-e516-874e-c28f97bb5ed0" crossorigin="anonymous"></script>
-                </body>
+                    // Some widgets need mouse events
+                    const eventOptions = { bubbles: true, cancelable: true, view: window };
+                    elementAtPoint.dispatchEvent(new MouseEvent('mousedown', eventOptions));
+                    elementAtPoint.dispatchEvent(new MouseEvent('mouseup', eventOptions));
+                } else {
+                    console.log("No element found at coordinate.");
+                }
+            }
+        }, 300);
+    }
 
-                </html>
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var bubble = document.getElementById('welcome-bubble');
+            if (bubble) {
+                bubble.classList.remove('d-none');
+                bubble.classList.add('show-bubble');
+            }
+        }, 2000);
+    });
+</script>
+<script type="text/javascript" src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js"
+    id="chatbot" environmentId="d0804337-75d7-e516-874e-c28f97bb5ed0" crossorigin="anonymous"></script>
+</body>
+
+</html>
