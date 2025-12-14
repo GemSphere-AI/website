@@ -80,6 +80,41 @@ fs.readdir(srcDir, (err, files) => {
                         title: 'Page Not Found - GemSphere AI',
                         keywords: '404, Page Not Found',
                         description: 'The page you are looking for does not exist. Return to GemSphere AI homepage.'
+                    },
+                    'cookie-policy.html': {
+                        title: 'Cookie Policy - GemSphere AI',
+                        keywords: 'Cookie Policy, Privacy, Data Usage, Tracking',
+                        description: 'Learn how GemSphere AI uses cookies to improve your experience.'
+                    },
+                    'privacy-policy.html': {
+                        title: 'Privacy Policy - GemSphere AI',
+                        keywords: 'Privacy Policy, Data Protection, User Data, Security',
+                        description: 'Read our Privacy Policy to understand how GemSphere AI collects and uses your data.'
+                    },
+                    'terms-of-use.html': {
+                        title: 'Terms of Use - GemSphere AI',
+                        keywords: 'Terms of Use, Legal Agreements, User Rights',
+                        description: 'Review the Terms of Use for accessing and using GemSphere AI services.'
+                    },
+                    'faq.html': {
+                        title: 'Frequently Asked Questions - GemSphere AI',
+                        keywords: 'FAQ, Support, Help, Common Questions',
+                        description: 'Find answers to common questions about GemSphere AI services and support.'
+                    },
+                    'pricing.html': {
+                        title: 'Pricing Plans - GemSphere AI',
+                        keywords: 'Pricing, Cost, Plans, Startup, Enterprise',
+                        description: 'Flexible pricing plans for businesses of all sizes.'
+                    },
+                    'careers.html': {
+                        title: 'Careers - GemSphere AI',
+                        keywords: 'Careers, Jobs, Hiring, AI Jobs, Tech Jobs',
+                        description: 'Join the GemSphere AI team and build the future of technology.'
+                    },
+                    'project-detail.html': {
+                        title: 'Project Details - GemSphere AI',
+                        keywords: 'Case Study, Project, Success Story',
+                        description: 'In-depth look at our successful projects and solutions.'
                     }
                 };
 

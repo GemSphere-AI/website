@@ -1085,5 +1085,108 @@ body {
     width: 250px;
     height: 250px;
     background: #0dcaf0;
+
     animation-delay: -5s;
+}
+
+/*** Cookie Popup Start ***/
+.cookie-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: auto !important;
+    right: auto !important;
+    transform: translate(-50%, -50%) !important;
+    width: 400px;
+    max-width: 90%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    /* First shadow is the card drop shadow, second is the viewport backdrop */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3), 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    border: none;
+    text-align: center;
+}
+
+.cookie-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cookie-popup h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000000;
+    /* Fully black for header */
+}
+
+.cookie-popup p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #333333;
+    /* Darker gray for better readability */
+}
+
+.cookie-popup .d-flex {
+    justify-content: center !important;
+}
+
+.cookie-popup button {
+    min-width: 100px;
+}
+
+@media (max-width: 576px) {
+    .cookie-popup {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/*** Cookie Popup End ***/
+
+/*** Responsive Adjustments Start ***/
+@media (max-width: 991.98px) {
+    .page-header {
+        padding: 3rem 0;
+    }
+
+    .display-2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-2 {
+        font-size: 2.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem !important;
+    }
+
+    /* Adjust Cookie Popup for small screens */
+    .cookie-popup {
+        width: 95%;
+        padding: 20px;
+        bottom: 20px !important;
+        top: auto !important;
+        transform: translate(-50%, 0) !important;
+    }
+}
+
+/*** Responsive Adjustments End ***/
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 2.5rem !important;
+    }
 }
