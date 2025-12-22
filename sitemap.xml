@@ -13,11 +13,19 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://www.gemsphere.ai/product.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.gemsphere.ai/project.html</loc>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.gemsphere.ai/blog.html</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.gemsphere.ai/careers.html</loc>
         <priority>0.6</priority>
     </url>
     <url>
@@ -29,7 +37,27 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://www.gemsphere.ai/faq.html</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.gemsphere.ai/pricing.html</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://www.gemsphere.ai/contact.html</loc>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.gemsphere.ai/terms-of-use.html</loc>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.gemsphere.ai/privacy-policy.html</loc>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.gemsphere.ai/cookie-policy.html</loc>
+        <priority>0.4</priority>
     </url>
 </urlset>
