@@ -33,8 +33,8 @@ fs.readdir(srcDir, (err, files) => {
                 const pageMeta = {
                     'index.html': {
                         title: 'GemSphere AI - Innovative IT, E-commerce & Supply Chain Solutions',
-                        keywords: 'GemSphere AI, IT Solutions, Artificial Intelligence, E-commerce Development, Supply Chain Optimization, Software Development, Bengaluru, Automation',
-                        description: 'GemSphere AI delivers premium IT and AI solutions, specializing in custom software, advanced e-commerce platforms, and supply chain automation to help you grow.'
+                        keywords: 'GemSphere AI, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform, IT Solutions, Artificial Intelligence, Automation',
+                        description: 'GemSphere AI delivers premium IT and AI solutions, specializing in custom e-commerce supply chain software, advanced ERP solutions, and supply chain automation to help you grow.'
                     },
                     'about.html': {
                         title: 'About Us - GemSphere AI',
@@ -43,7 +43,7 @@ fs.readdir(srcDir, (err, files) => {
                     },
                     'service.html': {
                         title: 'Our Services - GemSphere AI',
-                        keywords: 'Web Development, AI Solutions, E-commerce, Supply Chain Management, UI/UX Design, Digital Marketing, App Development, Cyber Security',
+                        keywords: 'Web Development, AI Solutions, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation',
                         description: 'Explore our comprehensive IT services including Web Development, AI Integration, E-commerce Solutions, Supply Chain Optimization, and Digital Marketing.'
                     },
                     'project.html': {
@@ -53,7 +53,7 @@ fs.readdir(srcDir, (err, files) => {
                     },
                     'product.html': {
                         title: 'Our Products - GemSphere AI Solutions',
-                        keywords: 'AI Products, Business Automation, E-commerce Tools, Supply Chain Analytics, Data Analytics, Cybersecurity Tools, Cloud Platforms',
+                        keywords: 'AI Products, Business Automation, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform',
                         description: 'Explore GemSphere AI\'s innovative product suite including GemAI Core, SecureSphere, and detailed tools for e-commerce and supply chain management.'
                     },
                     'blog.html': {
@@ -119,10 +119,13 @@ fs.readdir(srcDir, (err, files) => {
                 };
 
                 const meta = pageMeta[file] || pageMeta['index.html']; // Fallback to index if not found
+                const baseUrl = 'https://www.gemsphere.ai/';
+                const canonicalUrl = baseUrl + (file === 'index.html' ? '' : file);
 
-                currentHeader = currentHeader.replace('<!-- TITLE -->', meta.title);
-                currentHeader = currentHeader.replace('<!-- META_KEYWORDS -->', meta.keywords);
-                currentHeader = currentHeader.replace('<!-- META_DESCRIPTION -->', meta.description);
+                currentHeader = currentHeader.replace(/<!-- TITLE -->/g, meta.title);
+                currentHeader = currentHeader.replace(/<!-- META_KEYWORDS -->/g, meta.keywords);
+                currentHeader = currentHeader.replace(/<!-- META_DESCRIPTION -->/g, meta.description);
+                currentHeader = currentHeader.replace(/<!-- CANONICAL_URL -->/g, canonicalUrl);
 
 
                 // 1. Remove 'active' from all nav links (and text-secondary if strictly coupled)
