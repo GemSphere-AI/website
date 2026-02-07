@@ -1,0 +1,87 @@
+{
+    "index.html": {
+        "title": "GemSphere AI - Innovative IT, E-commerce & Supply Chain Solutions",
+        "keywords": "GemSphere AI, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform, IT Solutions, Artificial Intelligence, Automation",
+        "description": "GemSphere AI delivers premium IT and AI solutions, specializing in custom e-commerce supply chain software, advanced ERP solutions, and supply chain automation to help you grow."
+    },
+    "about.html": {
+        "title": "About Us - GemSphere AI",
+        "keywords": "About GemSphere AI, IT Company Team, Software Engineers, AI Experts, Tech Mission",
+        "description": "Learn about GemSphere AI, our mission, and our expert team of software developers and AI specialists dedicated to transforming businesses."
+    },
+    "service.html": {
+        "title": "Our Services - GemSphere AI",
+        "keywords": "Web Development, AI Solutions, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation",
+        "description": "Explore our comprehensive IT services including Web Development, AI Integration, E-commerce Solutions, Supply Chain Optimization, and Digital Marketing."
+    },
+    "project.html": {
+        "title": "Our Projects - GemSphere AI Portfolio",
+        "keywords": "Software Projects, E-commerce Case Studies, Supply Chain Projects, IT Portfolio, App Success Stories, Web Development Examples",
+        "description": "View our portfolio of successful projects, including e-commerce platforms and logistics solutions. See how GemSphere AI has helped businesses achieve their goals."
+    },
+    "product.html": {
+        "title": "Our Products - GemSphere AI Solutions",
+        "keywords": "AI Products, Business Automation, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform",
+        "description": "Explore GemSphere AI's innovative product suite including GemAI Core, SecureSphere, and detailed tools for e-commerce and supply chain management."
+    },
+    "blog.html": {
+        "title": "Latest Insights - GemSphere AI Blog",
+        "keywords": "Tech Blog, AI Trends, Software Development News, IT Tips, Business Tech",
+        "description": "Stay updated with the latest trends in AI, software development, and technology business strategies on the GemSphere AI blog."
+    },
+    "testimonial.html": {
+        "title": "Client Testimonials - GemSphere AI",
+        "keywords": "Client Reviews, Customer Feedback, IT Service Reviews, Success Stories",
+        "description": "Read what our clients say about us. GemSphere AI is trusted by businesses for delivering exceptional quality and results."
+    },
+    "contact.html": {
+        "title": "Contact Us - GemSphere AI",
+        "keywords": "Contact GemSphere AI, Hire Developers, IT Support, Business Inquiry, Bengaluru Office",
+        "description": "Get in touch with GemSphere AI. We are here to answer your questions and discuss how we can help your business grow."
+    },
+    "404.html": {
+        "title": "Page Not Found - GemSphere AI",
+        "keywords": "404, Page Not Found",
+        "description": "The page you are looking for does not exist. Return to GemSphere AI homepage."
+    },
+    "cookie-policy.html": {
+        "title": "Cookie Policy - GemSphere AI",
+        "keywords": "Cookie Policy, Privacy, Data Usage, Tracking",
+        "description": "Learn how GemSphere AI uses cookies to improve your experience."
+    },
+    "privacy-policy.html": {
+        "title": "Privacy Policy - GemSphere AI",
+        "keywords": "Privacy Policy, Data Protection, User Data, Security",
+        "description": "Read our Privacy Policy to understand how GemSphere AI collects and uses your data."
+    },
+    "terms-of-use.html": {
+        "title": "Terms of Use - GemSphere AI",
+        "keywords": "Terms of Use, Legal Agreements, User Rights",
+        "description": "Review the Terms of Use for accessing and using GemSphere AI services."
+    },
+    "faq.html": {
+        "title": "Frequently Asked Questions - GemSphere AI",
+        "keywords": "FAQ, Support, Help, Common Questions",
+        "description": "Find answers to common questions about GemSphere AI services and support."
+    },
+    "pricing.html": {
+        "title": "Pricing Plans - GemSphere AI",
+        "keywords": "Pricing, Cost, Plans, Startup, Enterprise",
+        "description": "Flexible pricing plans for businesses of all sizes."
+    },
+    "careers.html": {
+        "title": "Careers - GemSphere AI",
+        "keywords": "Careers, Jobs, Hiring, AI Jobs, Tech Jobs",
+        "description": "Join the GemSphere AI team and build the future of technology."
+    },
+    "project-detail.html": {
+        "title": "Project Details - GemSphere AI",
+        "keywords": "Case Study, Project, Success Story",
+        "description": "In-depth look at our successful projects and solutions."
+    },
+    "service-detail.html": {
+        "title": "Service Details - GemSphere AI",
+        "keywords": "Custom Software, Mobile Apps, Game Development, AI Solutions, SaaS Development, Cloud Services, App Compliance, UI/UX Design, IT Consulting",
+        "description": "Detailed information about our comprehensive IT services including Custom Software, Mobile Apps, AI, and more."
+    }
+}
