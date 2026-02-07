@@ -9,7 +9,6 @@ const partialsDir = path.join(srcDir, 'partials');
 const headerTemplate = fs.readFileSync(path.join(partialsDir, 'header.html'), 'utf8');
 const footerTemplate = fs.readFileSync(path.join(partialsDir, 'footer.html'), 'utf8');
 const factTemplate = fs.readFileSync(path.join(partialsDir, 'fact.html'), 'utf8');
-const teamTemplate = fs.readFileSync(path.join(partialsDir, 'team.html'), 'utf8');
 
 fs.readdir(srcDir, (err, files) => {
     if (err) {
@@ -30,93 +29,7 @@ fs.readdir(srcDir, (err, files) => {
                 let currentHeader = headerTemplate;
 
                 // SEO Data
-                const pageMeta = {
-                    'index.html': {
-                        title: 'GemSphere AI - Innovative IT, E-commerce & Supply Chain Solutions',
-                        keywords: 'GemSphere AI, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform, IT Solutions, Artificial Intelligence, Automation',
-                        description: 'GemSphere AI delivers premium IT and AI solutions, specializing in custom e-commerce supply chain software, advanced ERP solutions, and supply chain automation to help you grow.'
-                    },
-                    'about.html': {
-                        title: 'About Us - GemSphere AI',
-                        keywords: 'About GemSphere AI, IT Company Team, Software Engineers, AI Experts, Tech Mission',
-                        description: 'Learn about GemSphere AI, our mission, and our expert team of software developers and AI specialists dedicated to transforming businesses.'
-                    },
-                    'service.html': {
-                        title: 'Our Services - GemSphere AI',
-                        keywords: 'Web Development, AI Solutions, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation',
-                        description: 'Explore our comprehensive IT services including Web Development, AI Integration, E-commerce Solutions, Supply Chain Optimization, and Digital Marketing.'
-                    },
-                    'project.html': {
-                        title: 'Our Projects - GemSphere AI Portfolio',
-                        keywords: 'Software Projects, E-commerce Case Studies, Supply Chain Projects, IT Portfolio, App Success Stories, Web Development Examples',
-                        description: 'View our portfolio of successful projects, including e-commerce platforms and logistics solutions. See how GemSphere AI has helped businesses achieve their goals.'
-                    },
-                    'product.html': {
-                        title: 'Our Products - GemSphere AI Solutions',
-                        keywords: 'AI Products, Business Automation, e-commerce supply chain software, supply chain management system, inventory management software, order management system, warehouse management software, e-commerce ERP solution, supply chain automation, B2B e-commerce platform',
-                        description: 'Explore GemSphere AI\'s innovative product suite including GemAI Core, SecureSphere, and detailed tools for e-commerce and supply chain management.'
-                    },
-                    'blog.html': {
-                        title: 'Latest Insights - GemSphere AI Blog',
-                        keywords: 'Tech Blog, AI Trends, Software Development News, IT Tips, Business Tech',
-                        description: 'Stay updated with the latest trends in AI, software development, and technology business strategies on the GemSphere AI blog.'
-                    },
-                    'team.html': {
-                        title: 'Meet Our Team - GemSphere AI',
-                        keywords: 'GemSphere Team, IT Professionals, Developers, Leadership, Tech Experts',
-                        description: 'Meet the expert team behind GemSphere AI. Our dedicated professionals are ready to deliver top-notch IT solutions for your business.'
-                    },
-                    'testimonial.html': {
-                        title: 'Client Testimonials - GemSphere AI',
-                        keywords: 'Client Reviews, Customer Feedback, IT Service Reviews, Success Stories',
-                        description: 'Read what our clients say about us. GemSphere AI is trusted by businesses for delivering exceptional quality and results.'
-                    },
-                    'contact.html': {
-                        title: 'Contact Us - GemSphere AI',
-                        keywords: 'Contact GemSphere AI, Hire Developers, IT Support, Business Inquiry, Bengaluru Office',
-                        description: 'Get in touch with GemSphere AI. We are here to answer your questions and discuss how we can help your business grow.'
-                    },
-                    '404.html': {
-                        title: 'Page Not Found - GemSphere AI',
-                        keywords: '404, Page Not Found',
-                        description: 'The page you are looking for does not exist. Return to GemSphere AI homepage.'
-                    },
-                    'cookie-policy.html': {
-                        title: 'Cookie Policy - GemSphere AI',
-                        keywords: 'Cookie Policy, Privacy, Data Usage, Tracking',
-                        description: 'Learn how GemSphere AI uses cookies to improve your experience.'
-                    },
-                    'privacy-policy.html': {
-                        title: 'Privacy Policy - GemSphere AI',
-                        keywords: 'Privacy Policy, Data Protection, User Data, Security',
-                        description: 'Read our Privacy Policy to understand how GemSphere AI collects and uses your data.'
-                    },
-                    'terms-of-use.html': {
-                        title: 'Terms of Use - GemSphere AI',
-                        keywords: 'Terms of Use, Legal Agreements, User Rights',
-                        description: 'Review the Terms of Use for accessing and using GemSphere AI services.'
-                    },
-                    'faq.html': {
-                        title: 'Frequently Asked Questions - GemSphere AI',
-                        keywords: 'FAQ, Support, Help, Common Questions',
-                        description: 'Find answers to common questions about GemSphere AI services and support.'
-                    },
-                    'pricing.html': {
-                        title: 'Pricing Plans - GemSphere AI',
-                        keywords: 'Pricing, Cost, Plans, Startup, Enterprise',
-                        description: 'Flexible pricing plans for businesses of all sizes.'
-                    },
-                    'careers.html': {
-                        title: 'Careers - GemSphere AI',
-                        keywords: 'Careers, Jobs, Hiring, AI Jobs, Tech Jobs',
-                        description: 'Join the GemSphere AI team and build the future of technology.'
-                    },
-                    'project-detail.html': {
-                        title: 'Project Details - GemSphere AI',
-                        keywords: 'Case Study, Project, Success Story',
-                        description: 'In-depth look at our successful projects and solutions.'
-                    }
-                };
+                const pageMeta = require('./metadata.json');
 
                 const meta = pageMeta[file] || pageMeta['index.html']; // Fallback to index if not found
                 const baseUrl = 'https://www.gemsphere.ai/';
@@ -151,9 +64,6 @@ fs.readdir(srcDir, (err, files) => {
                 if (content.includes('<!-- FACT_PARTIAL -->')) {
                     content = content.replace('<!-- FACT_PARTIAL -->', factTemplate);
                 }
-                if (content.includes('<!-- TEAM_PARTIAL -->')) {
-                    content = content.replace('<!-- TEAM_PARTIAL -->', teamTemplate);
-                }
 
                 // Combine
                 const finalHtml = currentHeader + '\n' + content + '\n' + footerTemplate;
@@ -166,4 +76,29 @@ fs.readdir(srcDir, (err, files) => {
             });
         }
     });
+
+    // Generate Sitemap
+    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${files.filter(file => file.endsWith('.html') && file !== '404.html').map(file => `
+    <url>
+        <loc>https://www.gemsphere.ai/${file}</loc>
+        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>${file === 'index.html' ? '1.0' : '0.8'}</priority>
+    </url>
+`).join('')}
+</urlset>`;
+
+    fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemapContent);
+    console.log('Built sitemap.xml');
+
+    // Generate Robots.txt
+    const robotsContent = `User-agent: *
+Allow: /
+Sitemap: https://www.gemsphere.ai/sitemap.xml`;
+
+    fs.writeFileSync(path.join(outDir, 'robots.txt'), robotsContent);
+    console.log('Built robots.txt');
+
 });

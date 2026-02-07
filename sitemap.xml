@@ -1,63 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.gemsphere.ai/index.html</loc>
-        <priority>1.0</priority>
-    </url>
+
     <url>
         <loc>https://www.gemsphere.ai/about.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.gemsphere.ai/service.html</loc>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/product.html</loc>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/project.html</loc>
-        <priority>0.8</priority>
-    </url>
+
     <url>
         <loc>https://www.gemsphere.ai/blog.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/careers.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/team.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/testimonial.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/faq.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/pricing.html</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.gemsphere.ai/contact.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>https://www.gemsphere.ai/terms-of-use.html</loc>
-        <priority>0.4</priority>
+        <loc>https://www.gemsphere.ai/careers.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+
     <url>
-        <loc>https://www.gemsphere.ai/privacy-policy.html</loc>
-        <priority>0.4</priority>
+        <loc>https://www.gemsphere.ai/contact.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+
     <url>
         <loc>https://www.gemsphere.ai/cookie-policy.html</loc>
-        <priority>0.4</priority>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/faq.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/index.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/pricing.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/privacy-policy.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/product.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/project-detail.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/project.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/service-detail.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/service.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/terms-of-use.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gemsphere.ai/testimonial.html</loc>
+        <lastmod>2026-02-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
